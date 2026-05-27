@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Modeste | Développeur Web Freelance</title>
+    
+    <meta name="description"
+        content="Portfolio professionnel de Modeste, développeur web freelance spécialisé en HTML, CSS, JavaScript et WordPress.">
+    <meta name="keywords" content="développeur web, freelance, portfolio, HTML, CSS, JavaScript, WordPress, Bénin">
+    <meta name="author" content="Modeste">
+
+    <!-- Google référencement -->
+    <meta property="og:title" content="Portfolio Développeur Web Freelance">
+    <meta property="og:description" content="Découvrez mes réalisations et services en développement web.">
+    <meta property="og:type" content="website">
+
+    <!-- Icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">M</div>
+
+        <nav id="navMenu">
+            <a href="#home">Accueil</a>
+            <a href="#realisations">Réalisations</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Je suis <span>Modeste AZE</span></h1>
+            <h2>Développeur Web,responsable de l'agence web ModesteDev.</h2>
+
+            <p>
+                Nous sommes spécialisés dans la création et dans le référencement de sites web de tout type. Maximisez votre présence en
+                ligne et dominez votre marché avec notre expertise. Votre succès numérique commence ici.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#realisations" class="btn">Voir mes projets</a>
+                <a href="#contact" class="btn-outline">Me contacter</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="./imgpot2.jpeg" alt="Photo de profil">
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <h2 class="section-title">Mes Services</h2>
+
+        <div class="services-container">
+
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Création de site web</h3>
+                <p>
+                    Création de sites web modernes avec HTML, CSS, JavaScript et responsive design.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Sites Responsive et maintenance</h3>
+                <p>
+                    Des sites parfaitement adaptés aux téléphones, tablettes et ordinateurs.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>SEO & Référencement</h3>
+                <p>
+                    Optimisation SEO pour améliorer la visibilité du site sur Google.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-brands fa-wordpress"></i>
+                <h3>WordPress</h3>
+                <p>
+                    Création et personnalisation de sites WordPress professionnels.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJETS -->
+    <section class="projects" id="realisations">
+    
+        <h2>Mes Réalisations</h2>
+        <p class="project-text">
+            Découvrez nos projets récents, fruits de notre expertise et de notre engagement à fournir des solutions de qualité.
+            Chaque réalisation reflète notre savoir-faire et notre attention aux détails, créant des expériences adaptées aux
+            besoins de nos clients.
+        </p>
+    
+        <div class="project-container">
+    
+            <!-- Projet 1 -->
+            <div class="project-card">
+                <h3>Calculatrice Web</h3>
+    
+                <p>
+                    Une calculatrice moderne et responsive capable d’effectuer
+                    des opérations rapidement avec une interface propre.
+                </p>
+    
+                <a href="https://modeste229009.github.io/calculator-ap/" target="_blank">
+                    Voir le site
+                </a>
+            </div>
+    
+            <!-- Projet 2 -->
+            <div class="project-card">
+                <h3>Snake Game</h3>
+    
+                <p>
+                    Jeu Snake interactif développé en avec un design
+                    fluide et une expérience utilisateur dynamique.
+                </p>
+    
+                <a href="https://modeste229009.github.io/game-snake/" target="_blank">
+                    Voir le site
+                </a>
+            </div>
+    
+            <!-- Projet 3 -->
+            <div class="project-card">
+                <h3>To Do List Pro</h3>
+    
+                <p>
+                    Application de gestion de tâches moderne permettant
+                    d’ajouter, supprimer et organiser les tâches facilement.
+                </p>
+    
+                <a href="https://modeste229009.github.io/To-do-list-pro/" target="_blank">
+                    Voir le site
+                </a>
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- TEMOIGNAGES -->
+    <div class="temoi-card">
+        <h2>Avis clients</h2>
+        <img src="./temoignage.png" alt="Témoignages">
+    </div>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <form action="https://formspree.io/f/xvzydpqd" method="post" id="contact-form">
+
+            <input type="text" name="name" placeholder="Votre nom" required>
+
+            <input type="email" name="email" placeholder="Votre email" required>
+
+            <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
+
+            <button type="submit">Envoyer le message</button>
+
+        </form>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>ModesteDev - Développeur Web </h3>
+        <p>© 2026 Tous droits réservés.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
